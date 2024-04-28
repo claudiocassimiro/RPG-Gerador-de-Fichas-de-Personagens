@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geração de Ficha de Personagem - RPG</title>
+    <link rel="stylesheet" href="./styles/form-styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">Geração de Ficha de Personagem - RPG</h1>
+    </header>
+    <section id="formulario" class="formulario">
+      <h2 class="subtitulo">Preencha as informações do personagem:</h2>
+      <form id="formFicha" class="form-ficha">
+        <label for="nome" class="label">Nome:</label>
+        <input type="text" id="nome" name="nome" class="campo-texto" required />
+
+        <label for="especie" class="label">Espécie:</label>
+        <input
+          type="text"
+          id="especie"
+          name="especie"
+          class="campo-texto"
+          required
+        />
+
+        <label for="classe" class="label">Classe:</label>
+        <input
+          type="text"
+          id="classe"
+          name="classe"
+          class="campo-texto"
+          required
+        />
+
+        <label for="habilidades" class="label">Habilidades:</label>
+        <textarea
+          id="habilidades"
+          name="habilidades"
+          class="campo-texto"
+          required
+        ></textarea>
+
+        <label for="nivel" class="label">Nível:</label>
+        <input
+          type="number"
+          id="nivel"
+          min="1"
+          name="nivel"
+          class="campo-numero"
+          required
+        />
+
+        <label for="forca" class="label">Força (mín. 1, máx. 10):</label>
+        <input
+          type="number"
+          id="forca"
+          name="forca"
+          class="campo-numero"
+          min="1"
+          max="10"
+          required
+        />
+
+        <label for="agilidade" class="label"
+          >Agilidade (mín. 1, máx. 10):</label
+        >
+        <input
+          type="number"
+          id="agilidade"
+          name="agilidade"
+          class="campo-numero"
+          min="1"
+          max="10"
+          required
+        />
+
+        <label for="craft" class="label">Craft (mín. 1, máx. 10):</label>
+        <input
+          type="number"
+          id="craft"
+          name="craft"
+          class="campo-numero"
+          min="1"
+          max="10"
+          required
+        />
+
+        <label for="pericia" class="label">Perícia (mín. 1, máx. 10):</label>
+        <input
+          type="number"
+          id="pericia"
+          name="pericia"
+          class="campo-numero"
+          min="1"
+          max="10"
+          required
+        />
+
+        <label for="coleta" class="label">Coleta (mín. 1, máx. 10):</label>
+        <input
+          type="number"
+          id="coleta"
+          name="coleta"
+          class="campo-numero"
+          min="1"
+          max="10"
+          required
+        />
+
+        <label for="comunicador" class="label"
+          >Comunicador (mín. 1, máx. 10):</label
+        >
+        <input
+          type="number"
+          id="comunicador"
+          name="comunicador"
+          class="campo-numero"
+          min="1"
+          max="10"
+          required
+        />
+
+        <button type="submit" class="botao">Gerar Ficha</button>
+      </form>
+    </section>
+    <footer>
+      <p class="direitos">
+        &copy; 2024 RPG Master. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="./scripts/form-script.js"></script>
+  </body>
+</html>
