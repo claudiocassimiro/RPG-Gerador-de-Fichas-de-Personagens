@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualização de Personagem - RPG</title>
+    <link rel="stylesheet" href="./styles/personage-viewer-styles.css" />
+    <!-- Link para o arquivo CSS (opcional) -->
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1 class="titulo">Visualização de Personagem - RPG</h1>
+    </header>
+    <section id="dadosPersonagem" class="secao-personagem">
+      <h2 class="subtitulo">Dados do Personagem</h2>
+      <div>
+        <p><strong>Nome:</strong> <span id="nome" class="info"></span></p>
+        <p><strong>Espécie:</strong> <span id="especie" class="info"></span></p>
+        <p><strong>Classe:</strong> <span id="classe" class="info"></span></p>
+        <p>
+          <strong>Habilidades:</strong>
+          <span id="habilidades" class="info"></span>
+        </p>
+        <p><strong>Nível:</strong> <span id="nivel" class="info"></span></p>
+        <p><strong>Atributos:</strong></p>
+        <ul class="atributos">
+          <li>
+            <strong>Força:</strong> <span id="forca" class="info"></span>
+            <button class="botao-aumentar" onclick="aumentarAtributo('forca')">
+              +
+            </button>
+          </li>
+          <li>
+            <strong>Agilidade:</strong>
+            <span id="agilidade" class="info"></span>
+            <button
+              class="botao-aumentar"
+              onclick="aumentarAtributo('agilidade')"
+            >
+              +
+            </button>
+          </li>
+          <li>
+            <strong>Craft:</strong> <span id="craft" class="info"></span>
+            <button class="botao-aumentar" onclick="aumentarAtributo('craft')">
+              +
+            </button>
+          </li>
+          <li>
+            <strong>Perícia:</strong> <span id="pericia" class="info"></span>
+            <button
+              class="botao-aumentar"
+              onclick="aumentarAtributo('pericia')"
+            >
+              +
+            </button>
+          </li>
+          <li>
+            <strong>Coleta:</strong> <span id="coleta" class="info"></span>
+            <button class="botao-aumentar" onclick="aumentarAtributo('coleta')">
+              +
+            </button>
+          </li>
+          <li>
+            <strong>Comunicador:</strong>
+            <span id="comunicador" class="info"></span>
+            <button
+              class="botao-aumentar"
+              onclick="aumentarAtributo('comunicador')"
+            >
+              +
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="equipamentos">
+        <h2 class="subtitulo">Equipamentos</h2>
+        <p>Área para os slots de equipamentos (bolsa, cestos)</p>
+        <!-- Adicione aqui os elementos HTML para os slots de equipamentos -->
+      </div>
+      <div class="roupas">
+        <h2 class="subtitulo">Roupas</h2>
+        <p>Área para roupas (vestimenta e sapatos)</p>
+        <!-- Adicione aqui os elementos HTML para as roupas -->
+      </div>
+      <div class="arma">
+        <h2 class="subtitulo">Arma Usada</h2>
+        <p>Área para a arma que está sendo usada</p>
+        <!-- Adicione aqui os elementos HTML para a arma -->
+      </div>
+    </section>
+    <footer class="rodape">
+      <p class="direitos">
+        &copy; 2024 RPG Master. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="./scripts/form-script.js"></script>
+    <script src="./scripts/personage-viewer.js"></script>
+  </body>
+</html>
