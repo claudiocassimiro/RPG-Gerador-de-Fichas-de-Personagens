@@ -1,0 +1,63 @@
+/* Reset de estilos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+.cabecalho,
+.rodape {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.rodape p {
+  font-size: 0.8rem;
+}
+
+/* Estilos para a seção de dados do personagem */
+.secao-personagem {
+  max-width: 600px; /* Centraliza o conteúdo com um máximo de largura */
+  margin: 20px auto; /* Centraliza a seção horizontalmente */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subtitulo {
+  margin-top: 20px;
+}
+
+.atributos {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.atributos li {
+  margin-bottom: 10px;
+}
+
+.botao-aumentar {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.botao-aumentar:hover {
+  background-color: #555;
+}
