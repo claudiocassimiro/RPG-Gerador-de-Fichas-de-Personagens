@@ -21,6 +21,11 @@ body {
   padding: 1rem 0;
 }
 
+.container-nivel-e-botao {
+  display: flex;
+  gap: 5px;
+}
+
 .rodape p {
   font-size: 0.8rem;
 }
