@@ -23,9 +23,23 @@ document.addEventListener("DOMContentLoaded", function () {
 function aumentarAtributo(atributo) {
   const spanAtributo = document.getElementById(atributo);
   const valorAtual = parseInt(spanAtributo.textContent);
+  const personagem = JSON.parse(localStorage.getItem("personagem"));
+
   if (valorAtual < 6) {
     spanAtributo.textContent = valorAtual + 1;
+    if (atributo === "nivel") {
+      personagem.nivel = valorAtual + 1;
+    } else {
+      personagem.atributos[atributo] = valorAtual + 1;
+    }
+
+    localStorage.setItem("personagem", JSON.stringify(personagem));
   } else {
     alert("Limite máximo de pontos atingido para este atributo.");
   }
+}
+
+function matarPersonagem() {
+  localStorage.removeItem("personagem");
+  window.location.href = "index.html";
 }
