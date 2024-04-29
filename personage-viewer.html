@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visualização de Personagem - RPG</title>
     <link rel="stylesheet" href="./styles/personage-viewer-styles.css" />
-    <!-- Link para o arquivo CSS (opcional) -->
   </head>
   <body>
     <header class="cabecalho">
       <h1 class="titulo">Visualização de Personagem - RPG</h1>
     </header>
     <section id="dadosPersonagem" class="secao-personagem">
-      <h2 class="subtitulo">Dados do Personagem</h2>
+      <div class="container-subtitulo-e-botao">
+        <h2 class="subtitulo">Dados do Personagem</h2>
+        <button onclick="matarPersonagem()">Matar personagem</button>
+      </div>
       <div>
         <p><strong>Nome:</strong> <span id="nome" class="info"></span></p>
         <p><strong>Espécie:</strong> <span id="especie" class="info"></span></p>
@@ -21,7 +23,12 @@
           <strong>Habilidades:</strong>
           <span id="habilidades" class="info"></span>
         </p>
-        <p><strong>Nível:</strong> <span id="nivel" class="info"></span></p>
+        <div class="container-nivel-e-botao">
+          <p><strong>Nível:</strong> <span id="nivel" class="info"></span></p>
+          <button class="botao-aumentar" onclick="aumentarAtributo('nivel')">
+            +
+          </button>
+        </div>
         <p><strong>Atributos:</strong></p>
         <ul class="atributos">
           <li>
@@ -94,7 +101,6 @@
         &copy; 2024 RPG Master. Todos os direitos reservados.
       </p>
     </footer>
-    <script src="./scripts/form-script.js"></script>
     <script src="./scripts/personage-viewer.js"></script>
   </body>
 </html>
